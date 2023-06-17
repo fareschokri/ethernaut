@@ -1,0 +1,90 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_his",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_proto",
+						"type": "string"
+					}
+				],
+				"name": "callTransFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_his",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_proto",
+						"type": "string"
+					}
+				],
+				"name": "delegatecallTransFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Testo.sol": "Testo"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Testo.sol": {
+			"keccak256": "0xf9b18587d523c7fc63ebdc68b9c5fc620f4fda299b412dd227a30ad9e4aab5b4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://30212d4462a1c0b72088f170c7fe7d18a51c60d3757ef4eefecbfd52e5aa2a07",
+				"dweb:/ipfs/QmfVTtjPuSbXYBfBN1yuZK3Zvs76CFbj1jQeVpGkq1LeDz"
+			]
+		}
+	},
+	"version": 1
+}

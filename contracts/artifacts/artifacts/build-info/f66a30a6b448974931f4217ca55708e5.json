@@ -1,0 +1,71 @@
+{
+	"id": "f66a30a6b448974931f4217ca55708e5",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.12",
+	"solcLongVersion": "0.6.12+commit.27d51765",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/artifacts/HakaBuilda.sol": {
+				"content": "// SPDX-License-Identifier: M"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "contracts/artifacts/HakaBuilda.sol: Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.6.12;\"\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.6.12;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/artifacts/HakaBuilda.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/artifacts/HakaBuilda.sol": {
+				"ast": {
+					"absolutePath": "contracts/artifacts/HakaBuilda.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"license": "M",
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "29:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

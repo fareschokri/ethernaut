@@ -1,0 +1,50 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"stateMutability": "nonpayable",
+				"type": "fallback"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Solver.sol": "Solver"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Solver.sol": {
+			"keccak256": "0x9d31dae33012983a87b67e4b9ccf77daf662f7e5d7d3b06925c4bdaea06f857b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a11bdd92848325196fdb5579b2b9adbe68aa4c9e3858a662696daabcd436d7a1",
+				"dweb:/ipfs/QmWH7ZSWPFAJBpFSwFbHVAKsYyLBVVLkBBxNBxpcUcHKLi"
+			]
+		}
+	},
+	"version": 1
+}

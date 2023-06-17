@@ -1,0 +1,129 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_lapp",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_much",
+						"type": "uint256"
+					}
+				],
+				"name": "callDonate",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "_nono",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "_wa",
+						"type": "bytes"
+					}
+				],
+				"name": "callParam",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_much",
+						"type": "uint256"
+					}
+				],
+				"name": "callWithdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "murda",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_much",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/hh.sol": "hh"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/hh.sol": {
+			"keccak256": "0xad33ffa025e67c67efe3d50fed3b3211ef3389a5fb2b50315e6b0545ed14a0cd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://49df40ec5859d9be4b0812dd6cf654b30394d5cc1c06c7e93949cbeff91a53fb",
+				"dweb:/ipfs/QmV2jL9LGatUEUhaJABfRtxqYtjnK6e9EbmcRxuZ6r36xS"
+			]
+		}
+	},
+	"version": 1
+}

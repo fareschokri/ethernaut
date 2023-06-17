@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "goTo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/artifacts/HakaBuilda.sol": "Elevator"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/artifacts/HakaBuilda.sol": {
+			"keccak256": "0x4794fa25f09fecc025764e3e3120bca8a6e5934aafb68ad05b49740b58f49f18",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://057f04c06dc23ae8b411ea6269f8307c832e2a6627e722c5da36e2206bf1eb65",
+				"dweb:/ipfs/QmZ8jdQgzFD6HPD29VjNcQWd187fiJ5x5wadmjQ8N66XV9"
+			]
+		}
+	},
+	"version": 1
+}

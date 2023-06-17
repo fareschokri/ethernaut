@@ -1,0 +1,640 @@
+{
+	"id": "b5d0926a1b89703d920ff342018e84db",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.15",
+	"solcLongVersion": "0.8.15+commit.e14f2714",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/HakPreservation.sol": {
+				"content": "//SPDX-License-Identifier:MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract HakPreservation{\r\n    \r\n    address owner;\r\n    \r\n    constructor(){\r\n        owner = msg.sender;\r\n    }\r\n\r\n    fallback() external payable{}\r\n\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/HakPreservation.sol": {
+				"HakPreservation": {
+					"abi": [
+						{
+							"inputs": [],
+							"stateMutability": "nonpayable",
+							"type": "constructor"
+						},
+						{
+							"stateMutability": "payable",
+							"type": "fallback"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/HakPreservation.sol\":58:213  contract HakPreservation{... */\n  mstore(0x40, 0x80)\n    /* \"contracts/HakPreservation.sol\":121:171  constructor(){... */\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n    /* \"contracts/HakPreservation.sol\":153:163  msg.sender */\n  caller\n    /* \"contracts/HakPreservation.sol\":145:150  owner */\n  0x00\n  dup1\n    /* \"contracts/HakPreservation.sol\":145:163  owner = msg.sender */\n  0x0100\n  exp\n  dup2\n  sload\n  dup2\n  0xffffffffffffffffffffffffffffffffffffffff\n  mul\n  not\n  and\n  swap1\n  dup4\n  0xffffffffffffffffffffffffffffffffffffffff\n  and\n  mul\n  or\n  swap1\n  sstore\n  pop\n    /* \"contracts/HakPreservation.sol\":58:213  contract HakPreservation{... */\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/HakPreservation.sol\":58:213  contract HakPreservation{... */\n      mstore(0x40, 0x80)\n      stop\n\n    auxdata: 0xa2646970667358221220e503d7ec3a636012a2961c9ccfbc2420a4738d84b0445acc305fbe72e5082e0064736f6c634300080f0033\n}\n",
+						"bytecode": {
+							"functionDebugData": {
+								"@_12": {
+									"entryPoint": null,
+									"id": 12,
+									"parameterSlots": 0,
+									"returnSlots": 0
+								}
+							},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550603c80605d6000396000f3fe608060405200fea2646970667358221220e503d7ec3a636012a2961c9ccfbc2420a4738d84b0445acc305fbe72e5082e0064736f6c634300080f0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLER PUSH1 0x0 DUP1 PUSH2 0x100 EXP DUP2 SLOAD DUP2 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF MUL NOT AND SWAP1 DUP4 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND MUL OR SWAP1 SSTORE POP PUSH1 0x3C DUP1 PUSH1 0x5D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE STOP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xE5 SUB 0xD7 0xEC GASPRICE PUSH4 0x6012A296 SHR SWAP13 0xCF 0xBC 0x24 KECCAK256 LOG4 PUSH20 0x8D84B0445ACC305FBE72E5082E0064736F6C6343 STOP ADDMOD 0xF STOP CALLER ",
+							"sourceMap": "58:155:0:-:0;;;121:50;;;;;;;;;;153:10;145:5;;:18;;;;;;;;;;;;;;;;;;58:155;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {
+								"@_16": {
+									"entryPoint": null,
+									"id": 16,
+									"parameterSlots": 0,
+									"returnSlots": 0
+								}
+							},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "608060405200fea2646970667358221220e503d7ec3a636012a2961c9ccfbc2420a4738d84b0445acc305fbe72e5082e0064736f6c634300080f0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE STOP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xE5 SUB 0xD7 0xEC GASPRICE PUSH4 0x6012A296 SHR SWAP13 0xCF 0xBC 0x24 KECCAK256 LOG4 PUSH20 0x8D84B0445ACC305FBE72E5082E0064736F6C6343 STOP ADDMOD 0xF STOP CALLER ",
+							"sourceMap": "58:155:0:-:0;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12000",
+								"executionCost": "24332",
+								"totalCost": "36332"
+							},
+							"external": {
+								"": "18"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 58,
+									"end": 213,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 58,
+									"end": 213,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 58,
+									"end": 213,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 121,
+									"end": 171,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 121,
+									"end": 171,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 121,
+									"end": 171,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 121,
+									"end": 171,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 121,
+									"end": 171,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 121,
+									"end": 171,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 121,
+									"end": 171,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 121,
+									"end": 171,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 121,
+									"end": 171,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 121,
+									"end": 171,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 121,
+									"end": 171,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 153,
+									"end": 163,
+									"name": "CALLER",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 150,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 145,
+									"end": 150,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "PUSH",
+									"source": 0,
+									"value": "100"
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "EXP",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "SLOAD",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "NOT",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "DUP4",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "OR",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 145,
+									"end": 163,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 58,
+									"end": 213,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 58,
+									"end": 213,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 58,
+									"end": 213,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 58,
+									"end": 213,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 58,
+									"end": 213,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 58,
+									"end": 213,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 58,
+									"end": 213,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220e503d7ec3a636012a2961c9ccfbc2420a4738d84b0445acc305fbe72e5082e0064736f6c634300080f0033",
+									".code": [
+										{
+											"begin": 58,
+											"end": 213,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 58,
+											"end": 213,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 58,
+											"end": 213,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 58,
+											"end": 213,
+											"name": "STOP",
+											"source": 0
+										}
+									]
+								}
+							},
+							"sourceList": [
+								"contracts/HakPreservation.sol",
+								"#utility.yul"
+							]
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"stateMutability\":\"payable\",\"type\":\"fallback\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/HakPreservation.sol\":\"HakPreservation\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/HakPreservation.sol\":{\"keccak256\":\"0xfbdfa7e0e69659661532d8b1fd63f33444fc808456a34ebc67f1c5584de4d2a1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e56fb888f8913748a19b0037f6b09530cbdf740f88da14f57e1d2e36dfe1b5bd\",\"dweb:/ipfs/QmdgxyXDggQ8Ss5i5fGCLuFuz252R9zwkyqet5hpV1SK4i\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 3,
+								"contract": "contracts/HakPreservation.sol:HakPreservation",
+								"label": "owner",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_address"
+							}
+						],
+						"types": {
+							"t_address": {
+								"encoding": "inplace",
+								"label": "address",
+								"numberOfBytes": "20"
+							}
+						}
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/HakPreservation.sol": {
+				"ast": {
+					"absolutePath": "contracts/HakPreservation.sol",
+					"exportedSymbols": {
+						"HakPreservation": [
+							17
+						]
+					},
+					"id": 18,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "31:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "HakPreservation",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 17,
+							"linearizedBaseContracts": [
+								17
+							],
+							"name": "HakPreservation",
+							"nameLocation": "67:15:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 3,
+									"mutability": "mutable",
+									"name": "owner",
+									"nameLocation": "103:5:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 17,
+									"src": "95:13:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address",
+										"typeString": "address"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "95:7:0",
+										"stateMutability": "nonpayable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"body": {
+										"id": 11,
+										"nodeType": "Block",
+										"src": "134:37:0",
+										"statements": [
+											{
+												"expression": {
+													"id": 9,
+													"isConstant": false,
+													"isLValue": false,
+													"isPure": false,
+													"lValueRequested": false,
+													"leftHandSide": {
+														"id": 6,
+														"name": "owner",
+														"nodeType": "Identifier",
+														"overloadedDeclarations": [],
+														"referencedDeclaration": 3,
+														"src": "145:5:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_address",
+															"typeString": "address"
+														}
+													},
+													"nodeType": "Assignment",
+													"operator": "=",
+													"rightHandSide": {
+														"expression": {
+															"id": 7,
+															"name": "msg",
+															"nodeType": "Identifier",
+															"overloadedDeclarations": [],
+															"referencedDeclaration": 4294967281,
+															"src": "153:3:0",
+															"typeDescriptions": {
+																"typeIdentifier": "t_magic_message",
+																"typeString": "msg"
+															}
+														},
+														"id": 8,
+														"isConstant": false,
+														"isLValue": false,
+														"isPure": false,
+														"lValueRequested": false,
+														"memberName": "sender",
+														"nodeType": "MemberAccess",
+														"src": "153:10:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_address",
+															"typeString": "address"
+														}
+													},
+													"src": "145:18:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"id": 10,
+												"nodeType": "ExpressionStatement",
+												"src": "145:18:0"
+											}
+										]
+									},
+									"id": 12,
+									"implemented": true,
+									"kind": "constructor",
+									"modifiers": [],
+									"name": "",
+									"nameLocation": "-1:-1:-1",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 4,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "132:2:0"
+									},
+									"returnParameters": {
+										"id": 5,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "134:0:0"
+									},
+									"scope": 17,
+									"src": "121:50:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "public"
+								},
+								{
+									"body": {
+										"id": 15,
+										"nodeType": "Block",
+										"src": "206:2:0",
+										"statements": []
+									},
+									"id": 16,
+									"implemented": true,
+									"kind": "fallback",
+									"modifiers": [],
+									"name": "",
+									"nameLocation": "-1:-1:-1",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 13,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "187:2:0"
+									},
+									"returnParameters": {
+										"id": 14,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "206:0:0"
+									},
+									"scope": 17,
+									"src": "179:29:0",
+									"stateMutability": "payable",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 18,
+							"src": "58:155:0",
+							"usedErrors": []
+						}
+					],
+					"src": "31:182:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/HakAlien.sol": "HakAlien"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/HakAlien.sol": {
+			"keccak256": "0xd71dd244db48ad65521160e5764f59e1730473328d52763f19de191be1192d61",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8019275bf0aeee563e5f10d40ddf30d5285fba54c8c0707961144cf8b866536b",
+				"dweb:/ipfs/QmVp4FjG71BedWTAUyxF9GEJBqbFjcSU4vtWVGUL6arRCQ"
+			]
+		}
+	},
+	"version": 1
+}

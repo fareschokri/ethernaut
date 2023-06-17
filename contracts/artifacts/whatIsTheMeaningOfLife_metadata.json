@@ -1,0 +1,51 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Solver.sol": "whatIsTheMeaningOfLife"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Solver.sol": {
+			"keccak256": "0x2bd1c9d154d8abc1309fef20fba90ef43f4a1c835c5fba36b3e6dec71a0dcdc5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d9bb59cc543a40d14978be7d275486f105fc53fad4ddff5450243dde54d82df0",
+				"dweb:/ipfs/QmZRd5yv7xwyfWsUjeWFi8N14kRut6CwUVZ1euQrA4Uuar"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,69 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b50607180601d6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063650500c114602d575b600080fd5b60336035565b005b6020602af3fea2646970667358221220a09921957a142a1a3ddd36cb3311f1f99f9c3dab1a732543778925c95b55f67964736f6c634300060c0033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x71 DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x650500C1 EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x33 PUSH1 0x35 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x20 PUSH1 0x2A RETURN INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 LOG0 SWAP10 0x21 SWAP6 PUSH27 0x142A1A3DDD36CB3311F1F99F9C3DAB1A732543778925C95B55F679 PUSH5 0x736F6C6343 STOP MOD 0xC STOP CALLER ",
+			"sourceMap": "58:130:0:-:0;;;;;;;;;;;;;;;;;;;"
+		},
+		"deployedBytecode": {
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b506004361060285760003560e01c8063650500c114602d575b600080fd5b60336035565b005b6020602af3fea2646970667358221220a09921957a142a1a3ddd36cb3311f1f99f9c3dab1a732543778925c95b55f67964736f6c634300060c0033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x650500C1 EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x33 PUSH1 0x35 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x20 PUSH1 0x2A RETURN INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 LOG0 SWAP10 0x21 SWAP6 PUSH27 0x142A1A3DDD36CB3311F1F99F9C3DAB1A732543778925C95B55F679 PUSH5 0x736F6C6343 STOP MOD 0xC STOP CALLER ",
+			"sourceMap": "58:130:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;77:108;;;:::i;:::-;;;162:4;159:2;152:15"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "22600",
+				"executionCost": "75",
+				"totalCost": "22675"
+			},
+			"external": {
+				"whatIsTheMeaningOfLife()": "119"
+			}
+		},
+		"methodIdentifiers": {
+			"whatIsTheMeaningOfLife()": "650500c1"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [],
+			"name": "whatIsTheMeaningOfLife",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		}
+	]
+}
